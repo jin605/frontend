@@ -1,3 +1,92 @@
-* {
+/* * {
     color: green;
+} */
+
+/* 자식 선택자 / 후손 선택자 */
+#test1>h4 {
+    background-color: orange;
+}
+
+#test1>ul>h4 {
+    background-color: purple;
+}
+#test1>ul>li {
+    background-color: green;
+}
+
+#test1 h4 {
+    color: white;
+}
+
+#test1 li {
+    color: red;
+}
+
+/* 형제 선택자 */
+#test2+div {
+    background-color: yellowgreen;
+}
+
+#test2~div {
+    color: burlywood;
+}
+
+#test2+div~div {
+    background-color: orangered;
+}
+
+/* 반응 선택자 */
+#active-test, #hover-test {
+    background-color: yellowgreen;
+    width: 250px;
+    height: 250px;
+}
+
+#active-test:active {
+    background-color: yellow;
+    color: red;
+}
+
+#hover-test:hover {
+    background-color: salmon;
+    color: white;
+    cursor: pointer;
+}
+
+/* #userId:focus, #userPwd:focus { */
+input[name^=user]:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+/* 상태 선택자 */
+input[type=checkbox]:checked {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked+label {
+    font-size: 1.5em
+}
+/* 
+button:enabled {
+    border: 2px solid steelblue; 
+} */
+
+button:enabled:active {
+    border: 2px solid navy;
+    color: white;
+}
+
+button:disabled{
+    background-color: lightgray;
+    color: white;
+}
+
+/* 구조 선택자 */
+/* 현제 관계 태그 중 첫 번째 태그를 선택 */
+#test3>p:first-of-type {
+    background-color: red;
+    color: white;
+
 }
