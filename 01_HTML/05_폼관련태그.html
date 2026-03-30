@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h2>폼 관련 태그</h2>
+
+    <h3>form 태그</h3>
+
+    <form method="post" autocomplete="on">
+        <fieldset>
+            <legend>회원 정보 입력</legend>
+            <label for="username">아이디 : </label>
+            <input type="text" id="username" name="username" 
+                placeholder="아이디를 입력해 주세요." autocomplete="off" autofocus required>
+
+            <br>
+
+            <label for="password">비밀번호 : </label>
+            <input type="password" id="password" name="password"
+                placeholder="비밀번호를 입력해 주세요." required>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="로그인">
+        <input type="reset" value="초기화">
+    </form>
+
+    <h3>input 태그의 type 속성</h3>
+    
+    <h4>type="hidden"</h4>
+
+    <form>
+        <label for="hidden">안 보임 : </label>
+        <input type="hidden" id="hidden" name="hidden" value="1234">
+
+        <br><br>
+
+        <input type="submit" value="전송">
+    </form>
+
+    <h4>type="search|url|email|tel"</h4>
+
+    <form>
+        <label for="search">검색 : </label>
+        <input type="search" id="search" name="search"
+            size="50" maxlength="15" placeholder="검색어를 입력하세요.">
+
+        <br>
+
+        <label for="homepage">홈페이지 : </label>
+        <input type="url" id="homepage" name="homepage" value="https://">
+
+        <br>
+
+        <label for="email">이메일 : </label>
+        <input type="email" id="email" name="email" placeholder="이메일을 입력해 주세요.">
+
+        <br>
+
+        <label for="phone">전화번호 : </label>
+        <input type="tel" id="phone" name="phone" placeholder="전화번호를 입력해 주세요.">
+
+        <br><br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+</body>
+</html>
