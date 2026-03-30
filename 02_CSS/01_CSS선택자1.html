@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 1</title>
+    <!-- 내부 스타일 시트 -->
+    <style>
+        /* CSS 주석 */
+        
+        /* 전체 선택자 */
+
+        /* 
+        *{
+            color: green;
+            
+        }
+        */
+
+        /* 태그 선택자 */
+        p {
+            color: hotpink
+        }
+
+        /* 아이디 선택자 */
+        #id1 {
+            background-color: indianred;
+            color: wheat;
+
+        }
+
+        #id3 {
+            background-color: yellowgreen;
+            color: antiquewhite;
+        }
+
+        /* 클래스 선택자 */
+        .class1 {
+            background-color: lightgray;
+            color: orange;
+        }
+        .class2 {
+            background-color: rgb(155, 248, 168);
+        }
+        .test{
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>CSS 선택자 1</h2>
+
+    <p>
+        선택자란?<br>
+        특정 html 태그를 선택할 떄 사용한다. <br>
+        태그를 선택하여 원하는 스타일과 기능을 적용할 수 있다.
+    </p>
+
+    <h3>1. 전체 선택자</h3>
+    <p>
+        HTML 문서 내부에 모든 태그를 선택할 때 사용한다.
+    </p>
+
+    <h3>2. 태그 선택자</h3>
+    <p>
+        HTML 문서 내부에 같은 태그를 모두 선택할 때 사용한다.
+    </p>
+
+    <h3>3. 아아디 선택자</h3>
+    <p>
+        HTML 문서 내부에 해당하는 아이디 속성값을 가진 태그만 선택할 때 사용한다.
+    </p>
+
+    <ol>
+        <li id="id1">아이디 선택자 테스트 1</li>
+        <li id="id2">아이디 선택자 테스트 2</li>
+        <li id="id3">아이디 선택자 테스트 3</li>
+        <li id="id4">아이디 선택자 테스트 4</li>
+    </ol>
+
+    <h3>4. 클래스 선택자</h3>
+    <p>
+        HTML 문서 내부에 해당하는 클래스 속성값을 가진 태그들을 선택할 때 사용한다.
+    </p>
+
+    <ul>
+        <li class="class1">클래스 선택자 테스트 1</li>
+        <li class="class2">클래스 선택자 테스트 2</li>
+        <li class="class1">클래스 선택자 테스트 3</li>
+        <li class="class2">클래스 선택자 테스트 4</li>
+        <li class="class1">클래스 선택자 테스트 5</li>
+    </ul>
+
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+</body>
+</html>
