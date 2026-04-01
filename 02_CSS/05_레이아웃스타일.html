@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 스타일</title>
+    <link rel="stylesheet" href="05_레이아웃스타일.css">
+</head>
+<body>
+    <h2>레이아웃 스타일</h2>
+
+    <h3>박스 모델</h3>
+
+    <h4>display 속성</h4>
+    <p>
+        블록 레벨 요소와 인라인 레벨 요소의 속성을 변경하여 배치 방식을 변경할 수 있다.
+    </p>
+
+    <h5>블록 레벨 요소를 인라인 레벨 요소로 변경</h5>
+    <!--  
+        블록 레벨 요소
+        - 한 줄 단위로 영역을 차지하는 요소 (너비 100%)
+        - p, div, main, header, ...
+    -->
+    <div class="display-inline">1 번째 영역</div>
+    <div class="display-inline">2 번째 영역</div>
+    <div class="display-inline">3 번째 영역</div>
+    <div class="display-inline">4 번째 영역</div>
+    <div class="display-inline">5 번째 영역</div>
+
+    <h5>인라인 레벨 요소를 블록 레벨 요소로 변경</h5>
+    <!--  
+        인라인 레벨 요소
+        - 내용에 해당하는 부분만 영역을 차지하는 요소
+        - span, label, ...
+    -->
+    <span class="display-block">1 번째 영역</span>
+    <span class="display-block">2 번째 영역</span>
+    <span class="display-block">3 번째 영역</span>
+    <span class="display-block">4 번째 영역</span>
+    <span class="display-block">5 번째 영역</span>
+
+    <h5>블록 레벨 요소를 인라인 블록 레벨 요소로 변경</h5>
+
+    <div class="display-inline-block">1 번째 영역</div>
+    <div class="display-inline-block">2 번째 영역</div>
+    <div class="display-inline-block">3 번째 영역</div>
+    <div class="display-inline-block">4 번째 영역</div>
+    <div class="display-inline-block">5 번째 영역</div>
+
+    <h4>padding</h4>
+    <p>
+        테두리와 컨텐츠 영역 사이의 여백이다.
+    </p>
+
+    <div id="padding"></div>
+
+    <h4>margin</h4>
+    <p>
+        요소와 요소 사이의 여백이다.
+    </p>
+
+    <div id="margin1" class="margin"></div>
+    <div id="margin2" class="margin"></div>
+
+    <h3>포지셔닝</h3>
+
+    <h4>float, clear</h4>
+
+    <div class="float">001</div>
+    <div class="float">002</div>
+    <div class="float">003</div>
+    <div class="float">004</div>
+    <div class="float">005</div>
+
+    <hr style="clear: both;">
+    <!-- <img src="../resources/images/꾸왁스.jpeg" width="200px"> -->
+
+    <h4>positioning</h4>
+
+    <div id="outer">
+       <div id="first">
+           <div id="second"></div>
+      </div>
+    </div> 
+
+    <!-- <div id="fixed"></div> -->
+
+    <h4>visibility</h4>
+
+    <div id="visibility1" class="visibility"></div>
+    <div id="visibility2" class="visibility"></div>
+    <div id="visibility3" class="visibility"></div>
+
+
+    <h4>z-index</h4>
+
+    <div id="z-outer">
+
+        <div id="z-index1" class="z-index"></div>
+        <div id="z-index2" class="z-index"></div>
+        <div id="z-index3" class="z-index"></div>
+
+    </div>
+
+
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+</body>
+</html>
