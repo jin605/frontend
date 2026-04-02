@@ -217,25 +217,7 @@ function forTest() {
         div4.innerHTML += `${value} `;
     }
 
-    div4.innerHTML += '<h4>객체 출력</h4>';
-
-    // console.log(user['name'], user['age'], user['height']);
-
-    // for in 구문
-    //  - 객체를 반복하는 경우에는 key 변수에 user 객체의 프로퍼티명을 순서대로 담아서 반복한다.
-
-    for (const key in user) {
-        // console.log(key);
-        div4.innerHTML += `key: ${key}, type: ${typeof(key)}, value: ${user[key]}<br>`;
-        
-    }
-
-    // for of 구문
-    //  - 객체의 경우 for of 구문을 사용할 수 없다.
-    // for (const value of user) {
-    //     console.log(value);
-    // }
-    
+    div4.innerHTML = '<h4>객체 출력</h4>';
 
     
 
